@@ -1,8 +1,8 @@
 
-function Get-forcepoint($tool) {
+function Get-sectool($tool) {
 
     if ($tool -eq 'forcepoint'){
-    $forcepoint = ('idboiwdlp001.unfi.com' )
+    $forcepoint = ('### List of server hostname to be tested ####' )
     $ports = ('443')
     Start-Sleep -Seconds 1
     Write-Host "" 
@@ -41,11 +41,11 @@ function Get-forcepoint($tool) {
     
 }
     else {  
-    Write-Host "No forcepoint"
+    Write-Host "No $tool"
     }
     Write-Host ""
     Write-Host " ##################################### " -ForegroundColor Green
     Write-Host "           Report Finished "  -ForegroundColor Green
     Write-Host " ##################################### " -ForegroundColor Green
 }
-Get-forcepoint(Read-Host -Prompt "Pick tool")
+Get-sectool(Read-Host -Prompt "Pick tool")
