@@ -1,7 +1,4 @@
 
-
-
-
 function Get-forcepoint($tool) {
 
     if ($tool -eq 'forcepoint'){
